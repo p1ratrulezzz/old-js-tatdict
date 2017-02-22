@@ -744,7 +744,7 @@ function disable_keyboard(mode)
 */
 
 document.body.style.visibility="inherit";
-//var kmk = search("k","‡·‡È","tat"));
+//var kmk = search("k","–∞–±–∞–π","tat"));
 //alert(kmk[0][0]);
 //alert(base["tat"].length +" "+base["rus"].length);
 //document.getElementById("splash").style.visibility="hidden";
