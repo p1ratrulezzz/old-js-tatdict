@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Татарско-русский большой словарь</title>
+
+</head>
+<body>
+<table>
+<tr>
+<td>0%</td>
+<td id="main"   style="border:solid 3px black;">
+<font id="line" style="background-color:transparent;border:solid 1px blue;color:white;">.........................</font>
+</td>
+<td>100%</td>
+</tr>
+
+</table>
+<input id="test1"  onClick='this.focus();select(this.value);' />
+
+<script type="text/javascript">
+String.prototype.encode= function()
+{
+
+var i = 0;
+var g="";
+var code;
+var o;
+var s=this;
+for(i=0;i<s.length;i++)
+{
+code = s.charCodeAt(i);
+if(code>=192 && code<=255)
+g += String.fromCharCode(code+848);
+else 
+{
+
+switch(code)
+{
+
+case 168:g+=String.fromCharCode(code+857);
+break;
+case 184:g+=String.fromCharCode(code+921);
+break;
+default:g+=s[i];
+
+}
+}
+}
+
+
+return g;
+}
+alert(1105-184);
+alert("ё".encode());
+</script>
+
+
+</body>
+</html>

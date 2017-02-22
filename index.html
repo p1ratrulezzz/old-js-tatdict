@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>Tatar dictionary search engine v.3.4.2  by P1ratRuleZZZ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+<script type="text/javascript">
+base = new Array();
+</script>
+<script type="text/javascript" src="js/rus.js">
+</script>
+<script type="text/javascript" src="js/tat.js">
+
+</script>
+<table class="settings_table">
+<tr><td>
+Язык:
+</td><td>
+<select id="lang">
+   <option value="rus">Pyccкий</option>
+   <option value="tat" id="input_tat">Taтapcкий</option>
+</select>
+</td></tr>
+<tr><td>
+Метод:</td><td>
+<select id="method">
+<option value="smart">Smart</option>
+<option value="line">String</option>
+<option value="juval">Array</option>
+</select>
+</td></tr>
+</table>
+Поиск: <input id="search_string" size=10px onKeyUp='if(event.keyCode==13) document.getElementById("main_button").click();' />
+<br />
+<input type="checkbox" id="tut">Toчнoe cooтвeтcвиe</input><br />
+<input type="checkbox" id="inversion">Инверсия</input>
+<br />
+<input type="checkbox" id="front" onClick='var o = Object(document.getElementById("tut")); 
+o.disabled=this.checked;
+if(o.disabled) o.checked=false; '>Поиск спереди</input>
+<br />
+<input type="button" value="Search" id="main_button" />
+<input type="button" value="Cтepeть" onClick='if(confirm("Bы тoчнo xoтитe cтepeть?"))
+{
+ document.getElementById("search_string").value="";
+ document.getElementById("result_table").innerHTML="";
+document.getElementById("results_caption").innerHTML="0 Results";
+}
+' />
+
+
+<table id="progressbar" style="visibility:hidden;">
+<tr class="progress">
+<td><font id="percent">0</font>%</td>
+<td  style="border:solid 3px white;" class="progresstd">
+<font id="line" class="progressbar" style="background-color:black;border:solid 1px blue;color:black;">.........................</font>
+</td>
+<td>100%</td>
+</tr>
+</table>
+
+<table id="keyboard" style="border:groove 1px white;" class="keyboard">
+   <tr><td>
+      <input class="k_button" name="keyboard" id="1175" onClick='document.getElementById("search_string").value += this.value;' type="button" value="&#1175;" />
+      <input class="k_button" name="keyboard" id="1187" onClick='document.getElementById("search_string").value += this.value;'  type="button" value="&#1187;" />
+      <input class="k_button" name="keyboard" id="1211" onClick='document.getElementById("search_string").value +=this.value' type="button" value="&#1211;" />
+      </td>
+   </tr>
+   <tr align="center"><td>
+      <input class="k_button" name="keyboard" id="1241" onClick='document.getElementById("search_string").value += this.value;'  type="button" value="&#1241;" />
+      <input class="k_button" name="keyboard" id="1257" onClick='document.getElementById("search_string").value += this.value;'  type="button" value="&#1257;" />
+      
+      </td>
+   </tr>
+   <tr align="center">
+      <td>
+         <input class="k_button" name="keyboard" id="1199" onClick='document.getElementById("search_string").value += this.value;'' type="button" value="&#1199;" />
+      
+<input class="k_button" name="keyboard" id="1241" onClick='document.getElementById("search_string").value += this.value;'  type="button" value="ё" />
+ 
+</td>
+   </tr>
+
+</table>
+   
+   
+
+
+<table class="result_table">
+<tr><td id="results_caption">Результаты:</td></tr>
+</table>
+<table class="result_table" cellpadding=0 cellspacing=0 width=50% id="result_table">
+</table>
+
+<script type="text/javascript" src="js/engine.js"></script>
+<script type="text/javascript">
+//alert(rus[23]);
+
+</script>
+<br /><br /><br />
+<center id="splash">
+<img src="copy.gif" width=176px></img>
+</center>
+<input type="button" onClick="base=null;" />
+<center><cite>Tatar dictionary search engine v.3.4.2 by P1ratRuleZZZ&copy</cite></center>
+<br />
+<center><cite>Animation by RTX&copy</cite></center>
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+body {visibility:hidden;font-family:Times, Tahoma, Arial, Georgia;background-color:black;color:white;font-size:8px;}
+select {font-family:Times, Tahoma, Arial, Georgia;}
+input {font-family:Arial, Georgia;font-weight:bold;font-size:10px;}
+cite {font-size:10px;}
+
+.settings_table {font-size:13px;}
+.progressbar {}
+.progresstd {font-size:2px;}
+.keyboard {}
+.k_button {border:inset 1px green;}
+.progress {font-family:Times, Georgia, Tahoma;font-size:10px;}
+.tbutton {background-color:transparent;border:none;}
+.result_table {color:white;background-color:gray;border:solid 3px white;}
